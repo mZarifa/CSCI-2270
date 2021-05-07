@@ -25,6 +25,7 @@ MovieTree::~MovieTree()
    destroyTree(root);
 }
 
+
 void printMovieHelper(TreeNode* t)
 {
     if (t != nullptr)

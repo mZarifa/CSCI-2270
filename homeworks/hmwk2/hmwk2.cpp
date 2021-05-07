@@ -98,6 +98,15 @@ void printNext10(wordItem uniqueWords[], int startRank, int totalNumWords)
   }
 }
 
+void printTenFromN(wordRecord distinctWords[], int n, int totalNumWords)
+{
+    for(int i = n; i < n + 10; i++)
+    {
+        float probablity = (float)distinctWords[i].count/totalNumWords;
+        cout << fixed << setprecision(5) << probablity << " - " << distinctWords[i].word << endl;
+    }
+}
+
 int main(int argc, char const *argv[])
 {
   int length = 100;

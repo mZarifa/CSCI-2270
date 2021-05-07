@@ -109,16 +109,12 @@ void Graph::breadthFirstTraverse(string sourceVertex){
              // return n->adj[x].v->distance;
            // }
         }
-
-
     }
-
-
     return;
-
 }
 
-void dft( vertex *vurt){
+void dft( vertex *vurt)
+{
   vurt->visited = true;
   for(unsigned x = 0; x < vurt->adj.size(); x++){
     if(!vurt->adj[x].v->visited){
@@ -126,6 +122,8 @@ void dft( vertex *vurt){
     }
   }
 }
+
+
 int Graph::getConnectedComponents(){
   int oof = 0;
   for(unsigned x = 0; x < vertices.size(); x++){
